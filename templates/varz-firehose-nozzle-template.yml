@@ -1,0 +1,58 @@
+---
+meta: (( merge ))
+
+name: (( merge ))
+director_uuid: (( merge ))
+releases:
+  - name: varz-firehose-nozzle
+    version: latest
+
+compilation:
+  workers: (( merge ))
+  network: varz-firehose-nozzle-net
+  reuse_compilation_vms: true
+  cloud_properties: (( merge ))
+
+update:
+  canaries: 1
+  canary_watch_time: 30000-100000
+  update_watch_time: 30000-100000
+  max_in_flight: 1
+  max_errors: 1
+
+networks:
+- name: varz-firehose-nozzle-net
+  subnets: (( merge ))
+
+resource_pools:
+- name: varz-firehose-nozzle
+  network: varz-firehose-nozzle-net
+  stemcell: (( meta.stemcell ))
+  size: (( merge ))
+  cloud_properties: (( merge ))
+
+jobs:
+- name: varz-firehose-nozzle
+  memory_mb: 2048
+  templates:
+    - {name: varz-firehose-nozzle, release: varz-firehose-nozzle}
+  instances: (( merge ))
+  resource_pool: varz-firehose-nozzle
+  networks: (( merge ))
+
+properties:
+  loggregator:
+    traffic_controller_url: (( merge ))
+  uaa:
+    url: (( merge ))
+    username: (( merge ))
+    password: (( merge ))
+  nozzle:
+    insecure_ssl_skip_verify: (( merge ))
+    subscription_id: (( merge ))
+    collector_registrar_interval_milliseconds: (( merge ))
+  nats:
+    user: (( merge ))
+    password: (( merge ))
+    machines: (( merge ))
+    port: (( merge ))

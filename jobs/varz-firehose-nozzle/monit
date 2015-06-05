@@ -1,0 +1,5 @@
+check process varz-firehose-nozzle
+  with pidfile /var/vcap/sys/run/varz-firehose-nozzle/varz-firehose-nozzle.pid
+  start program "/var/vcap/jobs/varz-firehose-nozzle/bin/varz-firehose-nozzle-ctl start"
+  stop program "/var/vcap/jobs/varz-firehose-nozzle/bin/varz-firehose-nozzle-ctl stop"
+  group vcap

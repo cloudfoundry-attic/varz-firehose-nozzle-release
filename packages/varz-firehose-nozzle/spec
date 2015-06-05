@@ -1,0 +1,8 @@
+---
+name: varz-firehose-nozzle
+
+dependencies:
+- golang1.4
+
+files:
+- varz-firehose-nozzle/**/*

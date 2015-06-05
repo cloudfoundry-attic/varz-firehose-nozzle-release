@@ -1,0 +1,19 @@
+{
+  "UAAURL": "<%=p("uaa.url")%>",
+  "UAAUser": "<%=p("uaa.username")%>",
+  "UAAPass": "<%=p("uaa.password")%>",
+  "TrafficControllerURL": "<%=p("loggregator.traffic_controller_url")%>",
+  "FirehoseSubscriptionID": "<%=p("nozzle.subscription_id")%>",
+  "Index": <%= spec.index %>,
+  "Job": "<%= name %>",
+  "VarzPort": 0,
+  "VarzUser": "",
+  "VarzPass": "",
+  "NatsHosts": <%= p("nats.machines") %>,
+  "NatsPort": <%= p("nats.port") %>,
+  "NatsUser": "<%= p("nats.user") %>",
+  "NatsPass": "<%= p("nats.password") %>",
+  "CollectorRegistrarIntervalMilliseconds": <%= p("nozzle.collector_registrar_interval_milliseconds") %>,
+  "NatsType": "MetronAgent",
+  "InsecureSSLSkipVerify": <%=p("nozzle.insecure_ssl_skip_verify")%>
+}
