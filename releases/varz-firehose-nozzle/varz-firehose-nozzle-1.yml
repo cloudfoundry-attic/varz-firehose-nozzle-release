@@ -1,0 +1,26 @@
+---
+packages:
+- name: golang1.4
+  version: f57ddbc8d55d7a0f08775bf76bb6a27dc98c7ea7
+  fingerprint: f57ddbc8d55d7a0f08775bf76bb6a27dc98c7ea7
+  sha1: 4be3fec0eac2a233f5f6499e8a9087ec57117518
+  dependencies: []
+- name: varz-firehose-nozzle
+  version: fc8ac7d4b18f66c310e0c3a1fdf195b009def806
+  fingerprint: fc8ac7d4b18f66c310e0c3a1fdf195b009def806
+  sha1: 4d43dc2e207b11d28271e46667c084b29d765802
+  dependencies:
+  - golang1.4
+jobs:
+- name: varz-firehose-nozzle
+  version: 485b2ed93599e17f376ea55cff756410bb9440ff
+  fingerprint: 485b2ed93599e17f376ea55cff756410bb9440ff
+  sha1: fc6c385c3609022cbbdf79694180a40ecfb97930
+license:
+  version: 9841d3f4cf3430748ecd6b1c6308345f8bf9404a
+  fingerprint: 9841d3f4cf3430748ecd6b1c6308345f8bf9404a
+  sha1: a53c463b25c73722110763e8f635fc82b85712bf
+commit_hash: '86662251'
+uncommitted_changes: true
+name: varz-firehose-nozzle
+version: '1'
