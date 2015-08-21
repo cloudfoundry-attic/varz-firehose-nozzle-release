@@ -34,3 +34,12 @@
 [submodule "src/varz-firehose-nozzle/src/github.com/pivotal-golang/localip"]
 	path = src/varz-firehose-nozzle/src/github.com/pivotal-golang/localip
 	url = https://github.com/pivotal-golang/localip.git
+[submodule "src/varz-firehose-nozzle/src/github.com/onsi/ginkgo"]
+	path = src/varz-firehose-nozzle/src/github.com/onsi/ginkgo
+	url = https://github.com/onsi/ginkgo
+[submodule "src/varz-firehose-nozzle/src/github.com/onsi/gomega"]
+	path = src/varz-firehose-nozzle/src/github.com/onsi/gomega
+	url = https://github.com/onsi/gomega
+[submodule "src/varz-firehose-nozzle/src/github.com/cloudfoundry/gunk"]
+	path = src/varz-firehose-nozzle/src/github.com/cloudfoundry/gunk
+	url = https://github.com/cloudfoundry/gunk
