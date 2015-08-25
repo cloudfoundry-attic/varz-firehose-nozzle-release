@@ -1,7 +1,10 @@
 ---
-meta: (( merge ))
+meta:
+  environment: ~
+  stemcell: ~
+  availability_zone: ~
 
-name: (( merge ))
+name: (( meta.environment ))
 director_uuid: (( merge ))
 releases:
   - name: varz-firehose-nozzle
@@ -51,6 +54,7 @@ properties:
     insecure_ssl_skip_verify: (( merge ))
     subscription_id: (( merge ))
     collector_registrar_interval_milliseconds: (( merge ))
+    deployment_name: (( meta.environment ))
   nats:
     user: (( merge ))
     password: (( merge ))

@@ -31,3 +31,5 @@ properties:
   nozzle.collector_registrar_interval_milliseconds:
     description: "Interval for registering with collector"
     default: 60000
+  nozzle.deployment_name:
+    description: "The name of the deployment"
