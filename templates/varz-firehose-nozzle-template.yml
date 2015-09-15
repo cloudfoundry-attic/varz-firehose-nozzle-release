@@ -54,7 +54,7 @@ properties:
     insecure_ssl_skip_verify: (( merge ))
     subscription_id: (( merge ))
     collector_registrar_interval_milliseconds: (( merge ))
-    deployment_name: (( meta.environment ))
+    deployment: (( merge ))
   nats:
     user: (( merge ))
     password: (( merge ))
